@@ -34,6 +34,33 @@
   box-sizing: border-box;
 }
 
+header {
+  background-color: #1e1f26;
+  color: var(--clr-text-light); /* HSL equivalent of #c0c0c0 */
+  padding: .5rem 0 .75rem;
+}
+
+.ll-header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  transition: all .6s;
+  transition: transform 500ms ease-out, -webkit-transform 500ms ease-out, background-color 500ms ease-out;  
+}
+
+.ll-header.-hidden {
+  transform: translateY(-100%);
+}
+
+.headerDown {
+  top: 0;
+}
+
+.page-header {
+  -webkit-transition: -webkit-transform 500ms ease-out;
+  transition: transform 500ms ease-out, -webkit-transform 500ms ease-out;
+}
+
 h3 {
   font-family: 'Bebas Neue';
   font-size: 1.5rem;
