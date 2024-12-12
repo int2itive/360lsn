@@ -71,6 +71,13 @@ h3 {
   letter-spacing: 0.040rem;
 }
 
+header h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: .5rem;
+}
+
 .container {
   position: relative;
   padding: 46px 0;
@@ -84,8 +91,25 @@ h3 {
   list-style: none;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 12px;
+}
+
+.link--sections .link {
+  list-style: none;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 0.8em;
+  background: var(--clr-primary-400);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem -0.25rem var(--clr-primary-900);
+}
+
+.link--sections .link a {
+  display: inline-block;
+  text-decoration: none;
+  color: currentColor;
+  font-family: 'Titillium Web', sans-serif;
+  padding: 0.2rem .65rem;
 }
 
 .css-8trac {
