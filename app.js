@@ -7,6 +7,13 @@ const anchorLinks = document.querySelectorAll('a[href*="#"]');
 //get site domain
 const domain = window.location.hostname;
 
+var threshold = 30,
+  uBound = 7, 
+  position = 0, 
+  lastScroll = 0, 
+  n_event = 0;
+
+
 window.addEventListener("scroll", function () {
     var position = window.scrollY || document.documentElement.scrollTop;
     
